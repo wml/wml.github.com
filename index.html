@@ -106,8 +106,7 @@
   <body onload="redirect_to_canonical()">
     <script type="text/javascript">
       function redirect_to_canonical() {
-        if (window.location != "http://me.wleszczuk.com" 
-          && window.location.hash != "#preview") {
+        if (-1 != window.location.indexOf("github")) {
           window.location = "http://me.wleszczuk.com";
         }
       }
