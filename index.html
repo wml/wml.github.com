@@ -103,7 +103,16 @@
       }
     </style>
   </head>
-  <body>
+  <body onload="redirect_to_canonical()">
+    <script type="text/javascript">
+      function redirect_to_canonical() {
+        if (window.location != "http://me.wleszczuk.com" 
+          && window.location.hash != "#preview") {
+          window.location = "http://me.wleszczuk.com";
+        }
+      }
+    </script>
+
     <div id="header">
       <div>
 	<div class="hook">
