@@ -8,7 +8,14 @@
     <link rel="stylesheet" type="text/css" href="../global.css">
 
     <style>
+      ul {
+        line-height: 28px;
+      }
 
+      h2 code {
+        color: #ccc;
+        float: right;
+      }
     </style>
     
     <title>Will Leszczuk | Software Engineer and Techology Leader | Style Guide | Objective-C | New York, NY</title>
@@ -42,25 +49,62 @@
     </div>
 
     <div>
-      <h2>TODO</h2>
-      <p> TODO </p>
-      <p> TODO </p>      
-      <p> TODO </p>
-      <p> TODO </p>      
-      <p> TODO </p>
-      <p> TODO </p>      
-      <p> TODO </p>
-      <p> TODO </p>      
-      <p> TODO </p>
-      <p> TODO </p>      
-      <p> TODO </p>
-      <p> TODO </p>      
-      <p> TODO </p>
-      <p> TODO </p>      
-      <p> TODO </p>
-      <p> TODO </p>      
-      <p> TODO </p>
-      <p> TODO </p>      
+      <h2>Spacing <code>__</code></h2>
+      <ul>
+        <li>Use four spaces to indent blocks; never use tabs</li>
+        <li>Include a blank line between function definitions</li>
+        <li>Put a single space after the keywords <code>if</code>, <code>while</code>, and <code>for</code></li>
+        <li>Put a single space after colons, closing parentheses, and argument names in method signatures and invocations</li>
+        <li>Don't put a space between the type and pointer specifier (<code>*</code>) in method signatures</li>
+        <li>Do put a space between the type and pointer specifier (<code>*</code>) when declaring variables, but don't include a space before the variable name</li>
+      </ul>
+
+      <hr />
+      
+      <h2>Braces <code>{}</code></h2>
+      <ul>      
+        <li>Put opening braces on the same line</li>
+        <li>Put closing braces on their own line</li>
+        <li>Always use braces around <code>if</code>, <code>while</code>, and <code>for</code> bodies</li>
+      </ul>        
+
+      <hr />
+      
+      <h2>Properties <code>@@</code></h2>
+      <ul>      
+        <li>Don't use any property modifiers except <code>nonatomic</code></li>
+        <li>Don't explicitly <code>@synthesize</code> properties</li>
+        <li>Don't expose unnecessary properties where fields will suffice</li>        
+      </ul>        
+
+      <hr />
+      
+      <h2>Naming <code>id</code></h2>
+      <ul>      
+        <li>Name fields with a leading underscore as with auto-synthesized properties</li>
+        <li>Name methods such that they read approximately as English</li>
+        <li>Local variables and methods should be <code>lowerCamelCased</code></li>
+        <li>Classes, block typedefs and constants should be <code>UpperCamelCased</code></li>        
+        <li>Don't use abbreviations unless they're universally used in place of the full word</li>
+        <li>Only upper-case the first letter of an acronym (<code>SslHttpUrl</code> vs. <code>SSLHTTPURL</code>)</li>
+        <li>Don't use <code>self</code> to refer to fields unless necessary</li>
+      </ul>        
+
+      <hr />
+            
+      <h2>Lines &amp; Alignment <code>\n</code></h2>
+      <ul>      
+        <li>Wrap lines longer than 120 characters</li>
+        <li>When method signatures or invocations wrap lines, align method name tokens to the same column</li>
+      </ul>        
+
+      <hr />
+
+      <h2>Code Organization <code>./</code></h2>
+      <ul>      
+        <li>Limit Xcode groups to logical high-level components</li>
+        <li>Place header files in <code>include</code>, implementations in <code>lib</code>, and non-source assets in <code>resources</code>
+      </ul>        
     </div>
 
     <div id="footer">
